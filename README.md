@@ -31,4 +31,4 @@ To reach the highest level of optimization (in number of instructions used), I h
 ## Keywords
 Manipulation of stacks  
 Sorting algorithms  
-Algorithm Complexity (Big O Notation)  
+Algorithms Complexity (Big O Notation)  
