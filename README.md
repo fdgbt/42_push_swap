@@ -29,6 +29,6 @@ In addition to the many searchs and retries to find the best algorithm, another 
 To reach the highest level of optimization (in number of instructions used), I had to combine two sorting algorithms: Quicksort and Insertsort.  
 
 ## Keywords
-Manipulation of stacks  
+Manipulation of stack  
 Sorting algorithms  
 Algorithms Complexity (Big O Notation)  
