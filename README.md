@@ -20,9 +20,9 @@ To manipulate the stack "a" and the stack "b", 11 operations are possibles:
 
 # Expected results
 Two programs are expected in this project.  
-The first one is the "push_swap" program that will take a list of numbers as input and will output the best set of instructions to sort the list.  
+The first one is the "push_swap" program that takes the list of numbers as input, determine the best use of instructions to sort the list then output them in the terminal.  
 
-The second one is the "checker" program that will take the same list of numbers as input, apply the set of instructions given by "push_swap" then confirm that the list is correctly sorted.  
+The second one is the "checker" program that takes the same list of numbers as input, reads and applies the instructions given by "push_swap" then finally confirm that the list is correctly sorted (or not).  
 
 # Notes
 To reach the highest level of optimization (in number of instructions used), I had to combine two sorting algorithms: Quicksort and Selectsort.  
