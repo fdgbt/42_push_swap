@@ -19,7 +19,7 @@ To manipulate the stack "a" and the stack "b", 11 operations are possibles:
 - rrr : rra and rrb at the same time.  
 
 ## Example
-This example sorts the integers of stack "a" with 12 instructions, but some optimisations are still possible to do better.  
+This example sorts the integers of stack "a" with 12 instructions, but some optimizations are still possible to do better.  
 ![Screenshot 2022-11-22 at 18-34-32 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203382812-451de35e-686f-4523-915b-57374debcd0f.png)  
 
 ## Expected Results
