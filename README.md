@@ -18,6 +18,10 @@ To manipulate the stack "a" and the stack "b", 11 operations are possibles:
 - rrb : reverse rotate b | Shift down all elements of stack b by 1. The last element becomes the first one.  
 - rrr : rra and rrb at the same time.  
 
+## Example
+This example sorts the integers of stack "a" with only 12 instructions.  
+![Screenshot 2022-11-22 at 18-34-32 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203382812-451de35e-686f-4523-915b-57374debcd0f.png)
+
 ## Expected Results
 Two programs are expected in this project.  
 The first one is the "push_swap" program that takes the list of numbers as input, determine the best use of instructions to sort the list then output them in the terminal.  
