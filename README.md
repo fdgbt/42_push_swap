@@ -24,9 +24,9 @@ This example sorts the integers of stack "a" with 12 instructions, but some opti
 
 ## Expected Results
 Two programs are expected in this project.  
-The first one is the "push_swap" program that takes the list of numbers as input, determine the best use of instructions to sort the list then output them in the terminal.  
+The first one is the "push_swap" program that takes the list of numbers as input, determines the best use of instructions to sort the list then outputs them in the terminal.  
 
-The second one is the "checker" program that takes the same list of numbers as input, reads and applies the instructions given by "push_swap" then finally confirm that the list is correctly sorted (or not).  
+The second one is the "checker" program that takes the same list of numbers as input, reads and applies the instructions given by "push_swap" then finally confirms that the list is correctly sorted (or not...).  
 
 ## Notes
 In addition to the many searchs and retries to find the best algorithm, another difficult part of this project is to adapt each sorting concept with the use of the limited set of instructions.  
