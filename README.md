@@ -30,7 +30,7 @@ The second one is the "checker" program that takes the same list of numbers as i
 
 ## Notes
 In addition to the many searchs and retries to find the best algorithm, another difficult part of this project is to adapt each sorting concept with the use of the limited set of instructions.  
-To reach the highest level of optimization (in number of instructions used), I had to combine two sorting algorithms: Quicksort and Insertsort.  
+To reach the highest level of optimization required (in term of number of instructions used), I had to combine two sorting algorithms: Quicksort and Insertsort.  
 
 ## Keywords
 Manipulation of stack  
