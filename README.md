@@ -1,5 +1,5 @@
 # 42_push_swap
-This project aims to sort data with two stacks but with a limited set of instructions, in as few moves as possible.  
+This project aims to sort a list of numbers with two stacks but with a limited set of instructions, in as few moves as possible.  
 
 # The set of instructions
 To manipulate the stack "a" and the stack "b", 11 operations are possibles:  
