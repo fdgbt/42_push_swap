@@ -30,8 +30,57 @@ The first one is the "push_swap" program that takes the list of numbers as input
 The second one is the "checker" program that takes the same list of numbers as input, reads and applies the instructions received by the terminal then finally confirms that the list is correctly sorted (or not...).  
 ![Screenshot 2022-11-25 at 14-44-05 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203998260-3ced866c-1cd8-458f-a6ca-bf0aef01c1a1.png)
 
-Both programs can be combined to check automatically the result or to count the number or instructions.  
+Both programs can be combined to check automatically the result.  
 ![Screenshot 2022-11-25 at 14-45-13 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203998468-267ae17d-b55e-4314-b51d-a96911c414a6.png)
+
+## Install
+
+Create or update both programs ("push_swap" and "checker") from sources.
+
+```
+make
+```
+
+## Reinstall
+
+Recompile completely both programs.
+
+```
+make re
+```
+
+## Clean
+
+Delete object files created during installation.
+
+```
+make clean
+```
+
+## Uninstall
+
+Delete object files but also both compiled programs.
+It will not affect the source code.
+
+```
+make fclean
+```
+
+Usage
+
+```
+./push_swap 125 65535 -42 0 [...]
+
+./checker 125 65535 -42 0 [...] -v -c -h [...]
+ 
+./checker -v -c -h [...] 125 65535 -42 0 [...]
+
+./checker [...] 125 -v 65535 -c [...] -42 -h 0 [...]
+
+ARG="[...] 125 65535 -42 0 [...] -v -c -d [...]"; ./push_swap $ARG | ./checker $ARG
+
+ARG="`ruby -e "puts (0...500).to_a.shuffle.join(' ')"` -c -n -d [...]"; ./push_swap $ARG | ./checker $ARG
+```
 
 ## Notes
 In addition to the many searchs and retries to find the best algorithm, another difficult part of this project is to adapt each sorting concept with the use of the limited set of instructions.  
