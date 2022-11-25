@@ -1,0 +1,123 @@
+** USAGE **
+
+Single mode examples:
+
+ ./push_swap [NB1] [NB2] [NB3] [NB4] [...]
+
+ ./checker [NB1] [NB2] [NB3] [NB4] [...] [-v] [-c] [-h] [...]
+ 
+ ./checker [-v] [-c] [-h] [...] [NB1] [NB2] [NB3] [NB4] [...]
+
+ ./checker [...] [NB1] [-v] [NB2] [-c] [...] [NB3] [-h] [NB4] [...]
+
+
+Dual mode examples:
+
+ ARG="[...] [NB1] [NB2] [NB3] [NB4] [...] [-v] [-c] [-d] [...]"; ./push_swap $ARG | ./checker $ARG
+
+ ARG="`ruby -e "puts (0...500).to_a.shuffle.join(' ')"` [-c] [-d] [-n] [...]"; ./push_swap $ARG | ./checker $ARG
+
+
+** HELP **
+
+[ ]| Optional
+   |   Means that all arguments are facultatives for usage.
+
+-v | Verbose
+   |   Print stack A then stack B after each instruction applied.
+
+-c | Colors
+   |   Use contextualized and ergonomic colors in terminal.
+   | Warning
+   |   Not recommanded if using I/O redirection in shell, e.g. with the operator '>'.
+
+-r | Read from file
+   |   Read/Write instructions from/to a file, for respectively checker/push_swap.
+   | Warning
+   |   The both programs can be used in Dual Mode and use the same instruction file at the same time.
+   |   The instruction file will be created if not exist, otherwise it does NOT need to be cleaned.
+   |   The path file must be provided as the next argument (see Example).
+   | Example (Dual Mode)
+   |   ARG="[NB1] [NB2] -r /home/inst_file [-c] [...]"; ./push_swap $ARG | ./checker $ARG
+
+-w | Write to file
+   |   It can be used instead of '-r' option for mnenonic help.
+   | Warning
+   |   The both '-w' and '-r' options are identical and do NOT need to be used together.
+   | Example (Single Mode)
+   |   ./push_swap [NB1] [NB2] -w /home/inst_file [-c] [...]
+   |   ./push_swap [NB1] [NB2] -r /home/inst_file [-c] [...]
+
+-i | Init from file
+   |   Read all integers from a file to init stack A.
+   |   The path file must be provided as the next argument (see Example).
+   | Warning
+   |   Only integers, one per line, are accepted as format for init file.
+   |   Indeed, options can NOT be enabled by this way, they still must be provided as arguments.
+   |   Also, all numbers initially provided as arguments are wiped.
+   | Example
+   |   ./checker [42] [-v] -i /home/init_file [-42] [-c] [...]
+   |   The numbers as [42] and [-42] are wiped. The options as [-v] and [-c] are well enabled.
+
+-n | Number of instructions
+   |   Print the total number of instructions.
+   | Warning
+   |   To print the individual number of instructions, '-n' must be used in combination with '-v'.
+   | Example
+   |   ./push_swap [NB1] [NB2] -n -v [...]
+
+-d | Display instructions
+   |   Force the display of all instructions in the terminal.
+   | Warning
+   |   The both "checker" and "push_swap" programs must be used in Dual Mode to be relevant.
+   |   Any program in Single Mode must be used in combination with '-r' or '-w' to be relevant.
+   | Example (Dual Mode)
+   |   ARG="[NB1] [NB2] -d [-c] [...]"; ./push_swap $ARG | ./checker $ARG
+   | Example (Single Mode)
+   |   ./checker [NB1] [NB2] -r /home/inst_file -d [c] [...]
+
+-s | Step by step mode
+   |   Force the program to wait the user press "[ENTER]" key after each instruction.
+   | Warning
+   |   The '-s' option must be used in combination with '-v' to be effective.
+   |   The both programs must be used in Dual Mode to be relevant.
+   |   With the "checker" program in Single Mode, the "[ENTER]" key must be pressed twice to finish. 
+   | Example
+   |   ARG="[NB1] [NB2] -s -v [-c] [...]"; ./push_swap $ARG | ./checker $ARG
+
+-h | Help
+   |   Print usage examples + options description + instructions reminder + additional support texts.
+
+
+** INSTRUCTIONS **
+
+- sa | Swap stack A
+- sb | Swap stack B
+- ss | sa + sb
+
+- pa | Push to stack A
+- pb | Push to stack B
+
+- ra | Rotate stack A
+- rb | Rotate stack B
+- rr | ra + rb
+
+- rra | Reverse Rotate stack A
+- rrb | Reverse Rotate stack B
+- rrr | rra + rrb
+
+
+** TIPS **
+
+While using quotes:
+ 
+ Enter "setopt shwordsplit" in ZSH terminal to enable the single line parsing mode.
+
+While displaying the state of the stacks (-v):
+
+ Enable infinite scrollback in | Terminator (Preferences -> Profile -> Scrolling).
+			       | Iterm2 (Preferences -> Profile -> Terminal).
+
+While waiting instructions:
+
+ Press "[CTRL] + [D]" or "[ENTER]" keys to finish.
