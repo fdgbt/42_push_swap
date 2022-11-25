@@ -92,7 +92,7 @@ ARG="`ruby -e "puts (0...500).to_a.shuffle.join(' ')"` -c -n -d [...]"; ./push_s
 ![Capture d’écran du 2022-11-25 15-34-57](https://user-images.githubusercontent.com/52746061/204007178-2c6e46e7-257e-49a3-9040-2525b4c9369f.png)
 
 ## Notes
-In addition to the many searchs and retries to find the best algorithm, another difficult part of this project is to adapt each sorting concept with the use of the limited set of instructions.  
+In addition to the many searchs and retries to find the best algorithm, another difficult part of this project is to adapt each sorting concept using only the limited set of instructions.  
 To reach the highest level of optimization required (in term of number of instructions used), I had to combine two sorting algorithms: Quicksort and Insertsort.  
 
 ## Keywords
