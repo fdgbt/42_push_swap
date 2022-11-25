@@ -59,14 +59,14 @@ make clean
 
 ## Uninstall
 
-Delete object files but also both compiled programs.
+Delete object files but also both compiled programs.  
 It will not affect the source code.
 
 ```
 make fclean
 ```
 
-Usage
+## Usage
 
 ```
 ./push_swap 125 65535 -42 0 [...]
@@ -80,6 +80,12 @@ Usage
 ARG="[...] 125 65535 -42 0 [...] -v -c -d [...]"; ./push_swap $ARG | ./checker $ARG
 
 ARG="`ruby -e "puts (0...500).to_a.shuffle.join(' ')"` -c -n -d [...]"; ./push_swap $ARG | ./checker $ARG
+```
+
+## MAN (complete user manual)
+
+```
+./checker -h
 ```
 
 ## Notes
