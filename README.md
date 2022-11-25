@@ -30,7 +30,7 @@ The first one is the "push_swap" program that takes the list of numbers as input
 The second one is the "checker" program that takes the same list of numbers as input, reads and applies the instructions received by the terminal then finally confirms that the list is correctly sorted (or not...).  
 ![Screenshot 2022-11-25 at 14-44-05 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203998260-3ced866c-1cd8-458f-a6ca-bf0aef01c1a1.png)
 
-Both programs can be combined to check automatically the result.
+Both programs can be combined to check automatically the result or to count the number or instructions.  
 ![Screenshot 2022-11-25 at 14-45-13 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203998468-267ae17d-b55e-4314-b51d-a96911c414a6.png)
 
 ## Notes
