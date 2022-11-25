@@ -27,7 +27,7 @@ Two programs are expected in this project.
 The first one is the "push_swap" program that takes the list of numbers as input, determines the best use of instructions to sort the list then outputs them in the terminal.  
 ![Screenshot 2022-11-25 at 14-42-26 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203998124-0b01c0b3-105c-4670-be5d-62507c4684d4.png)
 
-The second one is the "checker" program that takes the same list of numbers as input, reads and applies the instructions received by the terminal then finally confirms that the list is correctly sorted (or not...).  
+The second one is the "checker" program that takes the same list of numbers as input, reads and applies the instructions received by the terminal then finally confirms that the list is correctly sorted (OK) or not... (KO).  
 ![Screenshot 2022-11-25 at 14-44-05 push_swap fr pdf](https://user-images.githubusercontent.com/52746061/203998260-3ced866c-1cd8-458f-a6ca-bf0aef01c1a1.png)
 
 Both programs can be combined to check automatically the result.  
