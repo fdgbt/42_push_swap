@@ -69,15 +69,15 @@ make fclean
 ## Usage
 
 ```
-./push_swap 125 65535 -42 0 [...]
+./push_swap 125 -1 65535 -42 [...]
 
-./checker 125 65535 -42 0 [...] -v -c -h [...]
+./checker 125 -1 65535 -42 [...] -v -c -h [...]
  
-./checker -v -c -h [...] 125 65535 -42 0 [...]
+./checker -v -c -h [...] 125 -1 65535 -42 [...]
 
-./checker [...] 125 -v 65535 -c [...] -42 -h 0 [...]
+./checker [...] 125 -v -1 65535 -c [...] -h -42 [...]
 
-ARG="[...] 125 65535 -42 0 [...] -v -c -d [...]"; ./push_swap $ARG | ./checker $ARG
+ARG="[...] 125 -1 65535 -42 [...] -v -c -d [...]"; ./push_swap $ARG | ./checker $ARG
 
 ARG="`ruby -e "puts (0...500).to_a.shuffle.join(' ')"` -c -n -d [...]"; ./push_swap $ARG | ./checker $ARG
 ```
@@ -87,6 +87,9 @@ ARG="`ruby -e "puts (0...500).to_a.shuffle.join(' ')"` -c -n -d [...]"; ./push_s
 ```
 ./checker -h
 ```
+
+## Screenshot
+![Capture d’écran du 2022-11-25 15-34-57](https://user-images.githubusercontent.com/52746061/204007178-2c6e46e7-257e-49a3-9040-2525b4c9369f.png)
 
 ## Notes
 In addition to the many searchs and retries to find the best algorithm, another difficult part of this project is to adapt each sorting concept with the use of the limited set of instructions.  
